@@ -38,13 +38,13 @@ On large university campuses, thousands of belongings (student IDs, lab equipmen
                      ▼                                         ▼
         Shreshth Kumar Chaudhary                        Shreyansh Kumar
          Roll No: 2501010080                         Roll No: 2501010019
-      [ Frontend Lead & UI/UX ]                   [ Backend & DB Architect ]
+      [ Frontend Lead & DB Architect ]            [ Backend Lead & UI/UX ]
 ```
 
-| Member | Roll Number | Key Areas of Responsibility |
-|---|---|---|
-| **Shreshth Kumar Chaudhary** | `2501010080` | • Single-Page Application (SPA) architecture & tab routing (`index.html`)<br>• Real-time search debounce & filter controls (`app.js`)<br>• Modern university branding, responsive flex/grid layouts & modal dialogs (`styles.css`)<br>• Client-side form validation, toast notifications & keyboard accessibility (`Esc` navigation) |
-| **Shreyansh Kumar** | `2501010019` | • RESTful API design & modular endpoint architecture (`/api/*.php`)<br>• Relational database schema, indexing strategy & seed data (`schema.sql`)<br>• Secure image upload pipeline & `.htaccess` upload directory hardening<br>• Role-Based Access Control (RBAC), session management & Admin Dashboard (`admin.php`) |
+| Member | Roll Number | Role | Key Areas of Responsibility |
+|---|---|---|---|
+| **Shreshth Kumar Chaudhary** | `2501010080` | **Frontend Lead & Database Architecture** | • Single-Page Application (SPA) architecture & state management (`index.html`, `app.js`)<br>• Relational database schema design, indexing & relational integrity (`schema.sql`)<br>• Client-side data fetching, live debounced search & filter matrix<br>• Form validation, toast notification systems & accessibility |
+| **Shreyansh Kumar** | `2501010019` | **Backend Lead & UI/UX** | • RESTful PHP backend API design & endpoint integration (`/api/*.php`)<br>• University branding, responsive layout design & modal UX (`styles.css`, `admin.css`)<br>• Secure image upload pipeline & `.htaccess` security hardening<br>• Administrative dashboard design, RBAC authentication & session handling (`admin.php`) |
 
 ---
 
