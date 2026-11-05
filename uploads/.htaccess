@@ -1,0 +1,41 @@
+# ═══════════════════════════════════════════════════════════
+# Campus Lost & Found — Uploads Security Policy
+# Team Code Nemesis | B.Tech CSE | K.R. Mangalam University
+# ═══════════════════════════════════════════════════════════
+
+# Disable directory index browsing and CGI execution
+Options -Indexes -ExecCGI
+
+# Turn off script engine execution (PHP 5, 7, 8)
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+    php_flag engine off
+</IfModule>
+
+# Deny access to any executable or script file formats
+<FilesMatch "(?i)\.(php|php[0-9]*|phtml|phar|pl|py|cgi|asp|aspx|sh|bash|exe|bat|cmd|dll|bin|js|jsp)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order Deny,Allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Only allow safe static image files to be served
+<FilesMatch "(?i)\.(jpe?g|png|gif|webp)$">
+    <IfModule mod_authz_core.c>
+        Require all granted
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order Allow,Deny
+        Allow from all
+    </IfModule>
+</FilesMatch>
+
